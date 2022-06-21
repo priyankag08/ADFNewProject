@@ -1,0 +1,36 @@
+{
+	"name": "SqlServerDSToPointToTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerLS",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": "AZ-VDI-D1-262",
+				"UserName": "sa",
+				"Password": "sa@123"
+			}
+		},
+		"parameters": {
+			"TableNameDS": {
+				"type": "string"
+			},
+			"SchemaNameDS": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().SchemaNameDS",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().TableNameDS",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

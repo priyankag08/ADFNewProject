@@ -1,0 +1,35 @@
+{
+	"name": "SqlServerTableDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerLS",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": "AZ-VDI-D1-262",
+				"UserName": "sa",
+				"Password": "sa@123"
+			}
+		},
+		"parameters": {
+			"SchemaDS": {
+				"type": "String"
+			},
+			"TableNameDS": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().SchemaDS",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().TableNameDS",
+				"type": "Expression"
+			}
+		}
+	}
+}

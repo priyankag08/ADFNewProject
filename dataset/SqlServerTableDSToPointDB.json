@@ -1,0 +1,17 @@
+{
+	"name": "SqlServerTableDSToPointDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerLS",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": "AZ-VDI-D1-262",
+				"UserName": "sa",
+				"Password": "sa@123"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

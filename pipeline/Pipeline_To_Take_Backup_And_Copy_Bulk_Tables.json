@@ -1,0 +1,45 @@
+{
+	"name": "Pipeline_To_Take_Backup_And_Copy_Bulk_Tables",
+	"properties": {
+		"parameters": {
+			"serverName": {
+				"type": "String"
+			},
+			"uName": {
+				"type": "String"
+			},
+			"pass": {
+				"type": "String"
+			}
+		},
+		"variables": {
+			"CountryName": {
+				"type": "String"
+			},
+			"firstNameVar": {
+				"type": "String"
+			},
+			"lastNameVar": {
+				"type": "String"
+			},
+			"cityVar": {
+				"type": "String"
+			},
+			"phoneVar": {
+				"type": "String"
+			},
+			"idVar": {
+				"type": "String"
+			},
+			"Columns": {
+				"type": "String"
+			},
+			"tableName": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-06-20T14:05:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

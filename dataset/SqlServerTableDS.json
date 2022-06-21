@@ -5,7 +5,7 @@
 			"referenceName": "SqlServerLS",
 			"type": "LinkedServiceReference",
 			"parameters": {
-				"ServerName": "AZ-VDI-D1-262",
+				"ServerName": "AZ-VDI-D1-267",
 				"UserName": "sa",
 				"Password": "sa@123"
 			}

@@ -206,7 +206,7 @@
 		"parameters": {
 			"serverName": {
 				"type": "String",
-				"defaultValue": "AZ-VDI-D1-262"
+				"defaultValue": "AZ-VDI-D1-267"
 			},
 			"uName": {
 				"type": "String",
